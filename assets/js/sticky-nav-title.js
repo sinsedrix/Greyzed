@@ -7,7 +7,7 @@
  *
  * Usage:
  * ```
- * Casper.stickyTitle({
+ * Greyzed.stickyTitle({
  *     navSelector: '.site-nav-main',
  *     titleSelector: '.post-full-title',
  *     activeClass: 'nav-post-title-active'
@@ -16,12 +16,12 @@
  */
 
 (function (window, document) {
-    // set up Casper as a global object
-    if (!window.Casper) {
-        window.Casper = {};
+    // set up Greyzed as a global object
+    if (!window.Greyzed) {
+        window.Greyzed = {};
     }
 
-    window.Casper.stickyNavTitle = function stickyNavTitle(options) {
+    window.Greyzed.stickyNavTitle = function stickyNavTitle(options) {
         var nav = document.querySelector(options.navSelector);
         var title = document.querySelector(options.titleSelector);
 
@@ -54,7 +54,7 @@
             ticking = false;
         }
 
-        window.addEventListener('scroll', onScroll, {passive: true});
+        window.addEventListener("scroll", onScroll, { passive: true });
 
         update();
     };
