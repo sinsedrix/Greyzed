@@ -1,0 +1,15 @@
+{{#if @site.navigation}}
+<ul class="nav">
+    <!-- Loop through the pages -->
+    {{#get "pages" order="published_at desc" as |pages|}}
+    {{#foreach pages as |page|}}
+    <li class="page-{{page.slug}}{{#if current}} page-current{{/if}}"><a href="{{page.url}}">{{page.title}}</a>
+    </li>
+    {{/foreach}}
+    {{/get}}
+    <!-- End the loop -->
+</ul>
+{{/if}}
+{{#is "post"}}
+<span class="nav-post-title {{#unless @site.logo}}dash{{/unless}}">{{post.title}}</span>
+{{/is}}

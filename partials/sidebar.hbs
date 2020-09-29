@@ -1,0 +1,13 @@
+<nav class="sidebar">
+    <ul>
+        <li>
+            <h2>Last posts</h2>
+            <ul>
+                {{#foreach posts limit="5" as |post|}}
+                <li class="post-{{post.slug}}"><a href="{{post.url}}">{{post.title}}</a>
+                </li>
+                {{/foreach}}
+            </ul>
+        </li>
+    </ul>
+</nav>

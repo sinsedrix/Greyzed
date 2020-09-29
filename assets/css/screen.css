@@ -140,9 +140,7 @@ body {
 
 .site-header-content {
     z-index: 100;
-    padding: 6vw 3vw;
-    min-height: 200px;
-    max-height: 340px;
+    padding: 60px 30px;
     text-align: left;
 }
 
@@ -180,16 +178,6 @@ body {
 
 .site-home-header .site-header-background {
     margin-top: 0;
-}
-
-.site-home-header .site-header-content {
-    padding: 5vw 3vw 6vw;
-}
-
-.site-home-header .site-title {
-}
-
-.site-home-header .site-description {
 }
 
 /* 4.2 Archive header (tag and author post lists)
@@ -264,6 +252,8 @@ body {
     left: 0;
     z-index: 1000;
     background: color-mod(var(--darkgrey) l(-5%));
+    width: 1054px;
+    margin: 0 auto;
 }
 
 .site-nav {
@@ -276,7 +266,7 @@ body {
     height: 64px;
     font-size: 1.3rem;
 
-    padding: 0 7px;
+    padding: 0 12px;
 }
 
 .site-nav-left-wrapper {
@@ -315,10 +305,10 @@ body {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     margin-right: 10px;
-    padding: 10px 0 80px;
+    padding: 10px 0;
     font-weight: 500;
     letter-spacing: 0.2px;
-    text-transform: uppercase;
+
     white-space: nowrap;
 
     -ms-overflow-scrolling: touch;
@@ -344,11 +334,12 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin-right: 32px;
     padding: 12px 0;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 2.4rem;
     line-height: 1.8rem;
-    font-weight: bold;
+    font-weight: 400;
+    font-family: impact, Verdana, Arial, Sans-Serif;
     letter-spacing: -0.5px;
-    text-transform: none;
+    text-transform: uppercase;
 }
 
 .site-nav-logo:hover {
@@ -368,6 +359,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .site-nav-content {
     position: relative;
     align-self: flex-start;
+    height: 42px;
 }
 
 .nav {
@@ -591,10 +583,42 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .sidebar {
     color: #fff;
     background: url("../images/sidebar-bg.jpg") top no-repeat;
-    width: 275px;
+    width: 303px;
     float: left;
-    min-height: 613px;
-    padding: 75px 0 10px 28px;
+    min-height: 720px;
+    padding: 20px 0;
+}
+
+.sidebar > ul > li {
+    list-style-type: none;
+    list-style-image: none;
+    margin-bottom: 18px;
+}
+
+.sidebar h2 {
+    margin: 5px 0 0;
+    width: 255px;
+    height: 39px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 11px 0 0 47px;
+    background: url("../images/sidebar-headings.gif") top left no-repeat;
+    color: #eef0eb;
+    font-family: Tahoma, Verdana, Sans-Serif;
+    font-weight: bold;
+}
+
+.sidebar > ul > li > ul > li {
+}
+
+.sidebar a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    border-bottom: 1px dashed;
 }
 
 /* 7. Post Feed
@@ -602,17 +626,17 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .posts {
     overflow-x: hidden;
-    background: url("../images/content-bg.jpg") top center no-repeat;
-    width: 751px;
+    background: url("../images/content-bg.jpg") #fff top center no-repeat;
+    width: 717px;
     float: left;
+    padding: 8px;
 }
 
 .post-feed {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -20px;
-    padding: 50px 0 0;
+    padding: 6px 0 0;
 }
 
 .post-card {
@@ -621,8 +645,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: 0 0 40px;
-    padding: 0 20px 40px;
+    padding: 0 6px 20px;
+    margin-bottom: 20px;
     min-height: 220px;
     border-bottom: 1px solid color-mod(var(--lightgrey) l(+12%));
     background-size: cover;
@@ -2832,8 +2856,7 @@ Usage (In Ghost editor):
 
 .site-footer {
     position: relative;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding: 20px;
     color: #fff;
     background: color-mod(var(--darkgrey) l(-5%));
 }
