@@ -1,12 +1,27 @@
 <nav class="sidebar">
     <ul>
         <li>
-            <h2>Last posts</h2>
+            <h2>{{t "Last posts"}}</h2>
             <ul>
+                {{#get "posts" as |posts|}}
                 {{#foreach posts limit="5" as |post|}}
-                <li class="post-{{post.slug}}"><a href="{{post.url}}">{{post.title}}</a>
+                <li class="post-{{post.slug}} {{#if current}}post-current{{/if}}">
+                    <a href="{{post.url}}">{{post.title}}</a>
                 </li>
                 {{/foreach}}
+                {{/get}}
+            </ul>
+        </li>
+        <li>
+            <h2>{{t "Tags"}}</h2>
+            <ul>
+                {{#get "tags" as |tags|}}
+                {{#foreach tags as |tag|}}
+                <li class="tag-{{tag.slug}} {{#is current}}tag-current{{/is}}">
+                    <a href="{{tag.url}}">{{tag.name}}</a>
+                </li>
+                {{/foreach}}
+                {{/get}}
             </ul>
         </li>
     </ul>

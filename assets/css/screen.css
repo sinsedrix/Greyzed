@@ -64,6 +64,14 @@ body {
     z-index: 100;
 }
 
+.site-main .inner {
+    overflow-x: hidden;
+    background: url("../images/content-bg.jpg") #f9f9f9 top center no-repeat;
+    width: 717px;
+    float: left;
+    padding: 8px;
+}
+
 /* Full width page blocks */
 .outer {
     position: relative;
@@ -186,16 +194,13 @@ body {
 .site-archive-header .site-header-content {
     position: relative;
     align-items: stretch;
-    padding: 12vw 0 20px;
-    min-height: 200px;
-    max-height: 600px;
+    padding: 60px 30px;
 }
 
 .site-archive-header .no-image {
     padding-top: 0;
     padding-bottom: 0;
     color: var(--darkgrey);
-    background: #fff;
     opacity: 1;
 }
 
@@ -205,8 +210,7 @@ body {
 }
 
 .site-archive-header .no-image .site-header-content {
-    padding: 5vw 0 10px;
-    border-bottom: 1px solid color-mod(var(--lightgrey) l(+12%));
+    padding: 60px 30px;
 }
 
 /* Special header styles for smaller screens */
@@ -238,7 +242,7 @@ body {
     }
 
     .site-archive-header .no-image .site-header-content {
-        padding: 12vw 0 20px;
+        padding: 60px 30px;
     }
 }
 
@@ -318,6 +322,11 @@ body {
     padding-right: 20px;
 }
 
+.page-current,
+.post-current,
+.tag-current {
+    background-color: #cc0000;
+}
 /* Site Nav Hack Explanation (above):
 
 What's happening above is .site-nav-left is set to overflow-x and allow sideways scrolling, so that when there isn't enough space for all nav items (either due to lots of nav items, or a small viewport), you can still scroll side-to-side to reach them. Also, there is a small gradient on the left and right side covering the menu so that the menu goes offscreen smoothly.
@@ -625,11 +634,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 /* ---------------------------------------------------------- */
 
 .posts {
-    overflow-x: hidden;
-    background: url("../images/content-bg.jpg") #fff top center no-repeat;
-    width: 717px;
-    float: left;
-    padding: 8px;
 }
 
 .post-feed {
@@ -958,13 +962,13 @@ make sure this only happens on large viewports / desktop-ish devices.
 .page-template .site-main {
     margin-top: 64px;
     padding-bottom: 4vw;
-    background: #fff;
+    /*background: #fff;*/
 }
 
 .post-full-header {
     position: relative;
     margin: 0 auto;
-    padding: 70px 170px 50px;
+    padding: 50px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -988,14 +992,13 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 @media (max-width: 1170px) {
     .post-full-header {
-        padding: 60px 11vw 50px;
+        padding: 50px;
     }
 }
 
 @media (max-width: 800px) {
     .post-full-header {
-        padding-right: 5vw;
-        padding-left: 5vw;
+        padding: 20px;
     }
 }
 
@@ -1049,7 +1052,6 @@ make sure this only happens on large viewports / desktop-ish devices.
     font-family: Georgia, serif;
     font-size: 2rem;
     line-height: 1.6em;
-    background: #fff;
 }
 
 @media (max-width: 1170px) {
@@ -1911,8 +1913,7 @@ Usage (In Ghost editor):
 .read-next-feed {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -25px;
-    padding: 60px 0 0 0;
+    padding: 25px 0 0 0;
 }
 
 .read-next .post-card {

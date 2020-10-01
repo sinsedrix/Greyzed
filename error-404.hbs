@@ -12,6 +12,9 @@ into the {body} of the default.hbs template --}}
 </header>
 
 <main id="site-main" class="site-main outer error-content">
+    <div class="sidebar-main">
+        {{> "sidebar"}}
+    </div>
     <div class="inner">
         <section class="error-message">
             <h1 class="error-code">{{statusCode}}</h1>
@@ -20,11 +23,11 @@ into the {body} of the default.hbs template --}}
         </section>
 
         {{#get "posts" limit="3" include="authors,tags"}}
-            <div class="post-feed">
-                {{#foreach posts}}
-                {{> "post-card"}}
-                {{/foreach}}
-            </div>
+        <div class="post-feed">
+            {{#foreach posts}}
+            {{> "post-card"}}
+            {{/foreach}}
+        </div>
         {{/get}}
     </div>
 </main>

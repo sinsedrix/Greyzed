@@ -4,7 +4,7 @@ Greyzed theme for [Ghost](http://github.com/tryghost/ghost/). From Greyzed to Gr
 
 &nbsp;
 
-![screenshot-desktop](https://user-images.githubusercontent.com/353959/66987533-40eae100-f0c1-11e9-822e-cbaf38fb8e3f.png)
+![screenshot-desktop](https://github.com/sinsedrix/Greyzed/raw/master/assets/screenshot-desktop.jpg)
 
 &nbsp;
 
@@ -43,7 +43,7 @@ yarn dev
 
 Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
 
-The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
+The `zip` Gulp task packages the theme files into `dist/greyzed.zip`, which you can then upload to your site.
 
 ```bash
 # create .zip file
