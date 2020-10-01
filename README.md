@@ -1,6 +1,6 @@
 # Greyzed
 
-Greyzed theme for [Ghost](http://github.com/tryghost/ghost/). From Greyzed to Greyzed, work in progress! If you're just looking to download the latest release, head over to the [releases](https://github.com/sinsedrix/Greyzed/releases) page.
+Greyzed theme for [Ghost](http://github.com/tryghost/ghost/). From Greyzed to Greyzed! If you're just looking to download the latest release, head over to the [releases](https://github.com/sinsedrix/Greyzed/releases) page.
 
 &nbsp;
 
