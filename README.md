@@ -4,7 +4,7 @@ Greyzed theme for [Ghost](http://github.com/tryghost/ghost/). From Greyzed to Gr
 
 &nbsp;
 
-![screenshot-desktop](https://github.com/sinsedrix/Greyzed/raw/master/assets/screenshot-desktop.jpg)
+![screenshot-desktop](https://github.com/sinsedrix/Greyzed/raw/master/assets/screenshot-top.png)
 
 &nbsp;
 
