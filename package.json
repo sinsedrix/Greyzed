@@ -43,7 +43,9 @@
         "url": "https://github.com/TryGhost/Greyzed.git"
     },
     "bugs": "https://github.com/TryGhost/Greyzed/issues",
-    "contributors": "https://github.com/TryGhost/Greyzed/graphs/contributors",
+    "contributors": [
+        "https://github.com/sinsedrix/Greyzed/graphs/contributors"
+    ],
     "devDependencies": {
         "@tryghost/release-utils": "0.6.7",
         "autoprefixer": "10.0.0",

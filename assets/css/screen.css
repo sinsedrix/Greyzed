@@ -709,7 +709,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     color: #cc0000;
     font-family: impact, Verdana, Arial, Sans-Serif;
     background: url("images/arrow.gif") top left no-repeat;
-    padding: 0 0 18px 43px;
 }
 
 .no-image .post-card-title {
